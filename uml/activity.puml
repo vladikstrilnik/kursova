@@ -1,1 +1,21 @@
+@startuml
 
+start
+
+:Read pulse;
+
+:Add counter;
+
+:Calculate liters;
+
+:Calculate flow;
+
+:Create JSON;
+
+:HTTP POST;
+
+:Save to SQLite;
+
+stop
+
+@enduml
