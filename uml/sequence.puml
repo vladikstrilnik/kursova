@@ -1,1 +1,21 @@
+@startuml
 
+participant Meter
+
+participant ESP32
+
+participant Flask
+
+database SQLite
+
+Meter -> ESP32 : Pulse
+
+ESP32 -> Flask : POST /api/water
+
+Flask -> SQLite : INSERT
+
+SQLite --> Flask : OK
+
+Flask --> ESP32 : JSON OK
+
+@enduml
