@@ -1,1 +1,18 @@
+@startuml
+left to right direction
 
+actor "Користувач" as User
+
+rectangle "Система контролю водоспоживання" {
+
+usecase "Перегляд поточних даних" as UC1
+usecase "Перегляд статистики" as UC2
+usecase "Отримання повідомлень" as UC3
+
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+
+@enduml
