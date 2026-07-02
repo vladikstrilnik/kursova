@@ -1,1 +1,17 @@
+@startuml
 
+entity water_log{
+
+* id : INTEGER
+
+device : TEXT
+
+liters : REAL
+
+flow : REAL
+
+created_at : DATETIME
+
+}
+
+@enduml
