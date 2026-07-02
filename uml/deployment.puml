@@ -1,1 +1,31 @@
+@startuml
 
+node ESP32{
+
+component Firmware
+
+}
+
+cloud Internet
+
+node Server{
+
+component Flask
+
+database SQLite
+
+}
+
+node Browser{
+
+component WebHMI
+
+}
+
+ESP32 --> Internet
+
+Internet --> Server
+
+Browser --> Server
+
+@enduml
